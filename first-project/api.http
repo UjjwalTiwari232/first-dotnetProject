@@ -1,0 +1,31 @@
+GET  http://localhost:5076/records
+
+###
+GET  http://localhost:5076/records/20
+
+
+###
+POST http://localhost:5076/records
+Content-Type: application/json
+
+{
+  "name": "Fourth",
+  "genre": "fourth-desc",
+  "price": 10,
+  "releaseDate": "2003-02-02"
+}
+
+
+###
+PUT http://localhost:5076/records/1
+Content-Type: application/json
+
+{
+  "name": "Fifth",
+  "genre": "fifth-desc",
+  "price": 15.99,
+  "releaseDate": "2004-02-02"
+}
+
+###
+DELETE http://localhost:5076/records/1
