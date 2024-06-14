@@ -4,7 +4,7 @@ using first_project.EndPoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connString = "Data Source=RecordStore.db";
+var connString = builder.Configuration.GetConnectionString("RecordStore");
 
 builder.Services.AddSqlite<RecordStoreContext>(connString);
 
