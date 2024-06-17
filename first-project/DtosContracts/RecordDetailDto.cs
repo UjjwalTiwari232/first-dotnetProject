@@ -1,9 +1,9 @@
 ﻿namespace first_project.DtosContracts;
 
-public record class RecordDto(
+public record class RecordDetailDto(
     int Id, 
     string Name,
-    string Genre,
+    int GenreId,
     decimal Price,
     DateOnly ReleaseDate 
 );
